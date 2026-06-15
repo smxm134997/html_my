@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>星界 · 小游戏平台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name">星界</span>
+    </div>
+    <nav class="site-nav">
+      <a href="#home">首页</a>
+      <a href="#games">游戏</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1 class="hero-title">在寂静星空下<br />玩一局轻游戏</h1>
+      <p class="hero-sub">干净、清爽、随手可玩的小游戏合集</p>
+
+      <a href="#games" class="cta-entry">
+        <span class="cta-label">游戏</span>
+        <span class="cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section id="games" class="games-section">
+      <div class="section-head">
+        <h2 class="section-title">精选小游戏</h2>
+        <p class="section-desc" id="games-count">持续上架中…</p>
+      </div>
+
+      <div class="game-grid" id="game-grid">
+        <!-- 游戏卡片由 JS 动态渲染 -->
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2 class="section-title">关于</h2>
+      <p class="section-desc">
+        「星界」是一个极简风格的小游戏聚合站。
+        页面保持统一的视觉调性：留白充足、字体克制、动效柔和。
+        每次上架新游戏，只需在数据列表中追加一条记录，即可自动呈现。
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 星界 · 小游戏合集</span>
+  </footer>
+
+  <script src="games.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
